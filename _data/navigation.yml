@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "<span style='color:red'>Openings</span>"
+    url: /openings/
+  - title: "Publications"
+    url: /publications/
+  - title: "People"
+    url: /people/
+  - title: "Funding"
+    url: /funding/
+  - title: "About"
+    url: /about/
