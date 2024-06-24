@@ -21,11 +21,11 @@ jobs:
     - name: Build Jekyll site
       run: |
         set -xo pipefail
-        ruby news_generator.rb
-        ruby publications_generator.rb
         rm -rf _site/*
         gem install bundler
         bundle install
+        ruby news_generator.rb
+        ruby publications_generator.rb
         bundle exec jekyll build
         cp CNAME _site/CNAME
     - name: Deploy
