@@ -22,7 +22,7 @@
     </li>
     <li style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
         <div style="flex: 1;">
-            Daniel <a href="https://hanzhuangsyr.github.io/">Dr. Han Zhuang</a> successfully defends his thesis and is headed to Barabasi Lab at Northeastern University! Congrats Han!
+            <a href="https://hanzhuangsyr.github.io/">Dr. Han Zhuang</a> successfully defends his thesis and is headed to Barabasi Lab at Northeastern University! Congrats Han!
         </div>
         <div style="flex: 0 0 150px; text-align: right; color: #555; font-style: italic;">
             April 15, 2023
