@@ -39,8 +39,6 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
-        git commit -m 'Updating News and Publications content'
         git checkout gh-pages
         ls -Q | grep -v _site | xargs rm -rf
         mv _site/* .
