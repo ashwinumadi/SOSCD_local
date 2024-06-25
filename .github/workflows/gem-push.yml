@@ -19,6 +19,8 @@ jobs:
       with:
         ruby-version: '3.0'
     - name: Build Jekyll site
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: |
         set -xo pipefail
         rm -rf _site/*
@@ -30,6 +32,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add .
         git commit -m 'Updating News and Publications content'
+        git push origin main
         bundle exec jekyll build
         cp CNAME _site/CNAME
     - name: Deploy
