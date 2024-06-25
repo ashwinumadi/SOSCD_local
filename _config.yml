@@ -218,6 +218,7 @@ whitelist:
   - jemoji
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll-scholar
 
 
 # Archives
