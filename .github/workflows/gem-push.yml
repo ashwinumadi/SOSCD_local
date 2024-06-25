@@ -24,6 +24,8 @@ jobs:
         rm -rf _site/*
         gem install bundler
         bundle install
+        ruby news_generator.rb
+        ruby publications_generator.rb
         bundle exec jekyll build
         cp CNAME _site/CNAME
     - name: Deploy
@@ -33,7 +35,10 @@ jobs:
         set -xo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout -b gh-pages
+        git add .
+        git commit -m 'Updating News and Publications content'
+        git push origin main
+        git checkout gh-pages
         ls -Q | grep -v _site | xargs rm -rf
         mv _site/* .
         rm -rf _site
