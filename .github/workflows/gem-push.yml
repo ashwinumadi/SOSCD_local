@@ -26,6 +26,10 @@ jobs:
         bundle install
         ruby news_generator.rb
         ruby publications_generator.rb
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m 'Updating News and Publications content'
         bundle exec jekyll build
         cp CNAME _site/CNAME
     - name: Deploy
